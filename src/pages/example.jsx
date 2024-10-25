@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "../components/Button.jsx";
 
 export default function Example() {
+
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
