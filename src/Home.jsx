@@ -10,7 +10,7 @@ export default function Home() {
   const profileData = [
     { name: "Person1", imageSrc: "/defaultpfp.jpg" },
     { name: "Person2", imageSrc: "/defaultpfp.jpg" },
-    { name: "Person3", imageSrc: "/defaultpfp.jpg" },
+    { name: "Matthew", imageSrc: "/ml_pfp.jpg" },
     { name: "Person4", imageSrc: "/defaultpfp.jpg" },
     { name: "Pradyun Tandra", imageSrc: "https://media.licdn.com/dms/image/v2/D5603AQH156V3qNZ3Wg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709673303373?e=1735171200&v=beta&t=slV4nVpzXIH3_0x8pzmF6ezu69WIg3-NCk_Bycv3I6Q" },
     { name: "Person6", imageSrc: "/defaultpfp.jpg" },
