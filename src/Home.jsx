@@ -1,24 +1,28 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 export default function Home() {
-
   const [showOutline, setShowOutline] = useState(false);
 
-  // Names and images for each profile 
+  // Names and images for each profile
   const profileData = [
+    { name: "Ryan(Demo)", imageSrc: "/ryanpic.jpg" }, // Feel free to remove demo page whenever you want
     { name: "Ryan(Demo)", imageSrc: "/ryanpic.jpg" },  // Feel free to remove demo page whenever you want
     { name: "Shivam", imageSrc: "/shivam.png" },
     { name: "Ronald Tsai", imageSrc: "/RonaldPhoto.jpg" },
     { name: "Matthew", imageSrc: "/ml_pfp.jpg" },
-    { name: "Person4", imageSrc: "/defaultpfp.jpg" },
-    { name: "Pradyun Tandra", imageSrc: "https://media.licdn.com/dms/image/v2/D5603AQH156V3qNZ3Wg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709673303373?e=1735171200&v=beta&t=slV4nVpzXIH3_0x8pzmF6ezu69WIg3-NCk_Bycv3I6Q" },
+    { name: "Mihika", imageSrc: "/public/mihika-profilepic.jpeg" },
+    {
+      name: "Pradyun Tandra",
+      imageSrc:
+        "https://media.licdn.com/dms/image/v2/D5603AQH156V3qNZ3Wg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709673303373?e=1735171200&v=beta&t=slV4nVpzXIH3_0x8pzmF6ezu69WIg3-NCk_Bycv3I6Q",
+    },
     { name: "Person6", imageSrc: "/defaultpfp.jpg" },
     { name: "Person7", imageSrc: "/defaultpfp.jpg" },
     { name: "Person8", imageSrc: "/defaultpfp.jpg" },
     { name: "Person9", imageSrc: "/defaultpfp.jpg" },
-    { name: "Person10", imageSrc: "/defaultpfp.jpg" }
+    { name: "Person10", imageSrc: "/defaultpfp.jpg" },
   ];
 
   const toggleOutline = () => {
@@ -27,11 +31,19 @@ export default function Home() {
 
   return (
     <>
-      <div className={`min-h-screen w-screen bg-black flex flex-col ${showOutline ? 'outline' : ''}`}>
+      <div
+        className={`min-h-screen w-screen bg-black flex flex-col ${
+          showOutline ? "outline" : ""
+        }`}
+      >
         {/* Outline Toggle Button */}
         <div className="absolute top-4 right-4 flex items-center">
           <label className="switch">
-            <input type="checkbox" checked={showOutline} onChange={toggleOutline} />
+            <input
+              type="checkbox"
+              checked={showOutline}
+              onChange={toggleOutline}
+            />
             <span className="slider round"></span>
           </label>
           <span className="ml-2 text-white">Toggle Outline</span>
@@ -45,7 +57,10 @@ export default function Home() {
 
         <div className="w-full flex flex-wrap justify-center px-48 gap-16 mb-12">
           {profileData.map((profile) => (
-            <div key={profile.name} className="w-48 h-48 flex flex-col items-center font-monument text-xl">
+            <div
+              key={profile.name}
+              className="w-48 h-48 flex flex-col items-center font-monument text-xl"
+            >
               <Link to={`/profile/${profile.name}`}>
                 <img
                   className="profile-img"
@@ -53,7 +68,9 @@ export default function Home() {
                   alt={`${profile.name}'s profile`}
                 />
               </Link>
-              <span className="text-white font-semibold mt-2">{profile.name}</span>
+              <span className="text-white font-semibold mt-2">
+                {profile.name}
+              </span>
             </div>
           ))}
         </div>
@@ -63,10 +80,16 @@ export default function Home() {
             <h1 className="pb-4 text-htfgreen">CONTACT US</h1>
             <h1>htfpurdue@gmail.com</h1>
             <div className="flex text-4xl pt-4 gap-4">
-              <a href="https://www.instagram.com/hackthefuturepurdue/" target="_blank">
+              <a
+                href="https://www.instagram.com/hackthefuturepurdue/"
+                target="_blank"
+              >
                 <FaInstagram className="hover:animate-pop cursor-pointer" />
               </a>
-              <a href="https://www.linkedin.com/company/hack-the-future-at-purdue/" target="_blank">
+              <a
+                href="https://www.linkedin.com/company/hack-the-future-at-purdue/"
+                target="_blank"
+              >
                 <FaLinkedin className="hover:animate-pop cursor-pointer" />
               </a>
               <a href="https://github.com/Hack-the-Future" target="_blank">
@@ -76,8 +99,14 @@ export default function Home() {
           </div>
           <div className="flex-col pt-16 w-1/2"></div>
           <div className="flex-col justify-right px-8 pt-16">
-            <img src="/Logo.png" className="h-12 w-42 pl-12 mb-8 ml-6 object-right" alt="Logo" />
-            <h1 className="text-right">Purdue University, West Lafayette, IN, 47906</h1>
+            <img
+              src="/Logo.png"
+              className="h-12 w-42 pl-12 mb-8 ml-6 object-right"
+              alt="Logo"
+            />
+            <h1 className="text-right">
+              Purdue University, West Lafayette, IN, 47906
+            </h1>
           </div>
         </div>
       </div>
