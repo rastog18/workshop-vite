@@ -11,6 +11,7 @@ import RonaldPage from './pages/RonaldPage.jsx'
 import MatthewPage from './pages/MatthewPage'
 import ShivamPage from './pages/shivamPage.jsx';
 import Mihika from "./pages/Mihika.jsx";
+import AnushaPage from "./pages/AnushaPage.jsx";
 import AaryanPage from "./pages/aaryanPage.jsx";
 import MayukhaPage from "./pages/mayukhaPage.jsx";
 
@@ -40,8 +41,8 @@ function ProfileRouter() {
       return <DemoPage />;
     case "Mayukha":
       return <MayukhaPage />;
-    case "Person3":
-      return <DemoPage />;
+    case "Anusha":
+      return <AnushaPage />;
     case "Aaryan Bondre":
       return <AaryanPage />;
     case "Pradyun Tandra":
