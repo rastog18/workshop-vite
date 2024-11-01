@@ -2,7 +2,6 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import DemoPage from "./pages/demoPage.jsx";
 import "./index.css";
 import Home from "./Home.jsx";
 import Example from "./pages/example.jsx";
@@ -12,9 +11,7 @@ import RonaldPage from './pages/RonaldPage.jsx'
 import MatthewPage from './pages/MatthewPage'
 import ShivamPage from './pages/shivamPage.jsx';
 import Mihika from "./pages/Mihika.jsx";
-import './index.css'
-import Home from './Home.jsx'
-import Example from './pages/example.jsx';
+import AaryanPage from "./pages/aaryanPage.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -44,8 +41,8 @@ function ProfileRouter() {
       return <DemoPage />;
     case "Person3":
       return <DemoPage />;
-    case "Person4":
-      return <DemoPage />;
+    case "Aaryan Bondre":
+      return <AaryanPage />;
     case "Pradyun Tandra":
       return <PradyunTPage />;
     case "Shivam":

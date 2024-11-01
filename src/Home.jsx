@@ -18,7 +18,7 @@ export default function Home() {
       imageSrc:
         "https://media.licdn.com/dms/image/v2/D5603AQH156V3qNZ3Wg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709673303373?e=1735171200&v=beta&t=slV4nVpzXIH3_0x8pzmF6ezu69WIg3-NCk_Bycv3I6Q",
     },
-    { name: "Person6", imageSrc: "/defaultpfp.jpg" },
+    { name: "Aaryan Bondre", imageSrc: "/aaryan.jpg" },
     { name: "Person7", imageSrc: "/defaultpfp.jpg" },
     { name: "Person8", imageSrc: "/defaultpfp.jpg" },
     { name: "Person9", imageSrc: "/defaultpfp.jpg" },
